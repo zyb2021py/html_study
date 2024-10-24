@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+      display: inline-block;
+      /*框体内：内容填充（空格）上下，左右*/
+      padding: 1px 1px;
+
+      /*固定框体宽度，保持一致，而非默认根据内容缩放*/
+      width: 60px;
+      /*线框规格，宽度，类型，颜色*/
+      border: 1px solid rgb(192, 255, 218);
+      /*框体间边距，留白（上下左右）*/
+      margin: 2px 1px;
+      /*导角，圆角*/
+      border-radius: 1px;
+      /*框体阴影，左右，上下*/
+      box-shadow: 1px 1px rgb(185, 7, 28);
+      /*背景色*/
+      background-color: #129be0;
+      /* 文本对齐居中center，左对齐..*/
+      text-align: left;
+      /*文本颜色*/
+      color: rgb(110, 255, 105);
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    let i, j = 1
+    for (i = 1; i < 10; i++) {
+      for (j = 1; j <= i; j++) {
+        let k = i * j
+        document.write(`<span>${i}*${j}=${k}</span>`) //${i}*${j}=${k}
+      }
+      document.write('<br>') //html中换行 `<br>`也可
+      //console换行使用\n
+      //console.log();
+
+    }
+
+  </script>
+
+</body>
+
+</html>
